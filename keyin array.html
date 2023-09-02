@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function KeyInArray(key, arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === key) {
+      return true;
+    }
+  }
+  return false;
+}
+
+const k1 = 4;
+const a = [1, 2, 3, 4, 5];
+const k2 = 33;
+const b = [11, 22, 33, 44];
+
+if (KeyInArray(k1, a)) {
+  console.log(`Key ${k1}  array find 'a'`);
+} else {
+  console.log(`Key ${k1}  array not find 'a'`);
+}
+
+if (KeyInArray(k2, b)) {
+  console.log(`Key ${k2} array find 'b'`);
+} else {
+  console.log(`Key ${k2}  array not find 'b'`);
+}
+
+</script>
+<body>
+    
+</body>
+</html>

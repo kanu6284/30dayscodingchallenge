@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findMin(arr) {
+  if (arr.length === 0) {
+    return null; 
+  }
+
+  let min = arr[0]; 
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+
+  return min;
+}
+
+// Arrays
+const a = [0, 1, 2, 3, 4, 5];
+const b = [5, 4, 3, 2, 1, 0];
+
+
+const minA = findMin(a);
+const minB = findMin(b);
+
+if (minA < minB) {
+  console.log("The minimum value in array 'a' is smaller:", minA);
+} else if (minA > minB) {
+  console.log("The minimum value in array 'b' is smaller:", minB);
+} else {
+  console.log("The minimum values in both arrays are equal:", minA);
+}
+
+</script>
+<body>
+    
+</body>
+</html>
