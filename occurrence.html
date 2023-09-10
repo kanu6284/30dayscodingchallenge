@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = [0, 1, 2, 3, 4, 5];
+           var b = [5, 4, 3, 2, 1, 0];
+var key = 1;
+
+function Occurrences(arr, key) {
+    var count = 0;
+    for (var i = 0; i < arr.length; i++) {
+if (arr[i] === key) {
+            count++;
+        }
+    }
+    return count;
+}
+
+var A = Occurrences(a, key);
+var B = Occurrences(b, key);
+
+console.log("Occurrences of  in array a: " + A);
+console.log("Occurrences of  in array b: " + B);
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
