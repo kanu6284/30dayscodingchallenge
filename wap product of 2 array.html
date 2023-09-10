@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function productOfMergedArrays(arr1, arr2) {
+  // Check if both arrays have the same length
+  if (arr1.length !== arr2.length) {
+    throw new Error("Arrays must have the same length.");
+  }
+
+  let product = 1;
+
+  for (let i = 0; i < arr1.length; i++) {
+    product *= arr1[i] * arr2[i];
+  }
+
+  return product;
+}
+
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const result = productOfMergedArrays(array1, array2);
+console.log("Product of Merged Arrays:", result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
