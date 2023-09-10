@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sumMergedArray(arrays) {
+  let mergedArray = [].concat(...arrays); // Merge the arrays into one using the spread operator
+  let sum = 0;
+
+  for (let i = 0; i < mergedArray.length; i++) {
+    sum += mergedArray[i];
+  }
+
+  return sum;
+}
+
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const array3 = [7, 8, 9];
+
+const mergedArray = [...array1, ...array2, ...array3]; 
+const result = sumMergedArray([array1, array2, array3]); 
+
+console.log("Merged Array:", mergedArray);
+console.log("Sum of Merged Array:", result);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
